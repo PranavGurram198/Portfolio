@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+  --primary: 14 165 233;
+  --primary-foreground: 255 255 255;
+  --secondary: 241 245 249;
+  --secondary-foreground: 15 23 42;
+  --accent: 217 70 239;
+  --accent-foreground: 255 255 255;
+  --border: 226 232 240;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+.dark {
+  --background: 2 6 23;
+  --foreground: 248 250 252;
+  --card: 15 23 42;
+  --card-foreground: 248 250 252;
+  --primary: 56 189 248;
+  --primary-foreground: 2 6 23;
+  --secondary: 30 41 59;
+  --secondary-foreground: 248 250 252;
+  --accent: 240 171 252;
+  --accent-foreground: 2 6 23;
+  --border: 51 65 85;
+  --glass-bg: rgba(15, 23, 42, 0.4);
+  --glass-border: rgba(100, 116, 139, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(var(--primary)), rgb(var(--accent)));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgb(var(--accent)), rgb(var(--primary)));
+}
+
+/* Glass morphism effect */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, rgb(var(--primary)), rgb(var(--accent)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated gradient background */
+.gradient-bg {
+  background: linear-gradient(
+    -45deg,
+    rgba(14, 165, 233, 0.1),
+    rgba(217, 70, 239, 0.1),
+    rgba(56, 189, 248, 0.1),
+    rgba(240, 171, 252, 0.1)
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 20px rgba(var(--primary), 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.glow:hover {
+  box-shadow: 0 0 40px rgba(var(--primary), 0.6);
+}
+
+/* Floating animation */
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Custom utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Selection */
+::selection {
+  background: rgba(var(--primary), 0.3);
+  color: rgb(var(--foreground));
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid rgb(var(--primary));
+  outline-offset: 2px;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Prevent transitions on page load */
+.no-transition {
+  transition: none !important;
+}
+
+/* Grid overlay for debugging (optional) */
+.debug-grid {
+  background-image: 
+    linear-gradient(rgba(var(--primary), 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--primary), 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Noise texture overlay */
+.noise-bg {
+  position: relative;
+}
+
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+}
