@@ -38,9 +38,9 @@ const About = () => {
               <div className="absolute top-0 right-0 w-40 h-40 bg-blue-600/10 rounded-full blur-3xl" />
               {/* Avatar */}
               <div className="w-32 h-32 rounded-2xl bg-gradient-to-br from-blue-600/30 to-blue-900/50 flex items-center justify-center mb-6 glow-blue-sm mx-auto">
-                <span className="font-display text-4xl font-bold text-gradient">AM</span>
+                <span className="font-display text-4xl font-bold text-gradient">PG</span>
               </div>
-              <h3 className="font-display text-xl font-bold text-white text-center mb-1">Alex Morgan</h3>
+              <h3 className="font-display text-xl font-bold text-white text-center mb-1">Pranav Gurram</h3>
               <p className="text-blue-400 text-sm font-mono text-center mb-6">Full Stack Developer</p>
 
               {/* Stats */}
@@ -68,7 +68,7 @@ const About = () => {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            I'm a passionate Full Stack Developer based in San Francisco, CA. I specialize in
+            I'm a passionate Full Stack Developer based in Pune, Maharashtra. I specialize in
             building modern web applications that blend stunning design with robust functionality.
           </motion.p>
           <motion.p

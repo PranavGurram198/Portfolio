@@ -60,10 +60,10 @@ const Navbar = () => {
             whileHover={{ scale: 1.02 }}
           >
             <div className="w-9 h-9 rounded-lg glass-blue flex items-center justify-center glow-blue-sm">
-              <span className="text-sm font-display font-bold text-gradient">AM</span>
+              <span className="text-sm font-display font-bold text-gradient">PG</span>
             </div>
             <span className="font-display font-bold text-white text-lg hidden sm:block tracking-tight">
-              Alex<span className="text-blue-400">.</span>
+              Pranav<span className="text-blue-400">.</span>
             </span>
           </motion.button>
 
@@ -93,7 +93,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <motion.a
-            href="mailto:alex@example.com"
+            href="mailto:pranavgurram19@gmail.com"
             className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-body font-medium transition-all duration-300 glow-blue-sm"
             whileHover={{ scale: 1.04, y: -1 }}
             whileTap={{ scale: 0.96 }}
@@ -154,7 +154,7 @@ const Navbar = () => {
                   transition={{ delay: navLinks.length * 0.07 }}
                 >
                   <a
-                    href="mailto:alex@example.com"
+                    href="mailto:pranavgurram19@gmail.com"
                     className="block mt-2 px-4 py-3 rounded-xl bg-blue-600 text-white font-body font-medium text-center"
                   >
                     Hire Me

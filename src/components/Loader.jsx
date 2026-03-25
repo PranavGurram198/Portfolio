@@ -17,7 +17,7 @@ const Loader = () => {
             animate={{ rotate: [0, 360] }}
             transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
           >
-            <span className="text-3xl font-display font-bold text-gradient">AM</span>
+            <span className="text-3xl font-display font-bold text-gradient">PG</span>
           </motion.div>
           <motion.div
             className="absolute inset-0 rounded-2xl border-2 border-blue-500/30"

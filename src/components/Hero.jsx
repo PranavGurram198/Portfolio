@@ -51,7 +51,7 @@ const Hero = () => {
               custom={1}
             >
               Hi, I'm{' '}
-              <span className="text-gradient block">Alex Morgan</span>
+              <span className="text-gradient block">Pranav Gurram</span>
             </motion.h1>
 
             {/* Title */}
@@ -126,7 +126,7 @@ const Hero = () => {
               {[
                 { icon: FiGithub, href: 'https://github.com', label: 'GitHub' },
                 { icon: FiLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-                { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
+                // { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
               ].map(({ icon: Icon, href, label }) => (
                 <motion.a
                   key={label}
@@ -163,7 +163,7 @@ const Hero = () => {
             >
               {/* Placeholder avatar */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-blue-900/40 to-black flex items-center justify-center">
-                <span className="font-display text-8xl font-bold text-gradient select-none">AM</span>
+                <span className="font-display text-8xl font-bold text-gradient select-none">PG</span>
               </div>
               {/* Overlay shimmer */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
