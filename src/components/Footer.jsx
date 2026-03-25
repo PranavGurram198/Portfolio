@@ -6,7 +6,7 @@ const socials = [
   { icon: FiGithub, href: 'https://github.com', label: 'GitHub' },
   { icon: FiLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
   { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: FiMail, href: 'mailto:alex@example.com', label: 'Email' },
+  { icon: FiMail, href: 'mailto:pranavgurram19@gmail.com', label: 'Email' },
 ];
 
 const navLinks = [
@@ -27,10 +27,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-9 h-9 rounded-lg glass-blue flex items-center justify-center glow-blue-sm">
-                <span className="text-sm font-display font-bold text-gradient">AM</span>
+                <span className="text-sm font-display font-bold text-gradient">PG</span>
               </div>
               <span className="font-display font-bold text-white text-lg tracking-tight">
-                Alex<span className="text-blue-400">.</span>Morgan
+                Pranav<span className="text-blue-400">.</span>Gurram
               </span>
             </div>
             <p className="text-gray-600 text-sm font-body leading-relaxed max-w-xs">
@@ -64,10 +64,10 @@ const Footer = () => {
           <div>
             <p className="text-white font-display font-semibold text-sm mb-4 tracking-wide">Let's Connect</p>
             <a
-              href="mailto:alex@example.com"
+              href="mailto:pranavgurram19@gmail.com"
               className="text-blue-400 hover:text-blue-300 text-sm font-mono mb-5 block transition-colors"
             >
-              alex@example.com
+              pranavgurram19@gmail.com
             </a>
             <div className="flex items-center gap-3">
               {socials.map(({ icon: Icon, href, label }) => (
@@ -94,7 +94,7 @@ const Footer = () => {
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-700 text-sm font-body flex items-center gap-1.5">
-            © {new Date().getFullYear()} Alex Morgan. Built with
+            © {new Date().getFullYear()} Pranav Gurram. Built with
             <FiHeart size={12} className="text-blue-500 mx-0.5" />
             and lots of coffee.
           </p>

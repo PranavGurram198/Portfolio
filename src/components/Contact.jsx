@@ -5,9 +5,9 @@ import { useInView } from '../hooks/useInView';
 import SectionHeader from './SectionHeader';
 
 const contactInfo = [
-  { icon: FiMail, label: 'Email', value: 'alex@example.com', href: 'mailto:alex@example.com' },
-  { icon: FiMapPin, label: 'Location', value: 'San Francisco, CA', href: null },
-  { icon: FiPhone, label: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' },
+  { icon: FiMail, label: 'Email', value: 'pranavgurram19@gmail.com', href: 'mailto:pranavgurram19@gmail.com' },
+  { icon: FiMapPin, label: 'Location', value: 'Pune, Maharashtra, India', href: null },
+  { icon: FiPhone, label: 'Phone', value: '+91 9112307181', href: 'Mob:+91 9112307181' },
 ];
 
 const InputField = ({ label, icon: Icon, error, type = 'text', textarea = false, ...props }) => (

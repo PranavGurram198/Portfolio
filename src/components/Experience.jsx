@@ -5,27 +5,27 @@ import { useInView } from '../hooks/useInView';
 import SectionHeader from './SectionHeader';
 
 const experiences = [
+  // {
+  //   role: 'Senior Full Stack Developer',
+  //   company: 'TechFlow Inc.',
+  //   location: 'San Francisco, CA',
+  //   period: 'Jan 2024 – Present',
+  //   type: 'Full-time',
+  //   description: 'Leading development of a high-traffic SaaS platform serving 500K+ users. Architected microservices migration reducing latency by 40%.',
+  //   achievements: [
+  //     'Reduced API response time by 40% through Redis caching and query optimization',
+  //     'Led a team of 5 engineers shipping features end-to-end',
+  //     'Implemented CI/CD pipelines cutting deployment time from 2 hours to 8 minutes',
+  //     'Built real-time notification system handling 1M+ events/day using WebSockets',
+  //   ],
+  //   stack: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],
+  //   color: 'from-blue-600/20 to-blue-900/10',
+  // },
   {
-    role: 'Senior Full Stack Developer',
-    company: 'TechFlow Inc.',
-    location: 'San Francisco, CA',
-    period: 'Jan 2024 – Present',
-    type: 'Full-time',
-    description: 'Leading development of a high-traffic SaaS platform serving 500K+ users. Architected microservices migration reducing latency by 40%.',
-    achievements: [
-      'Reduced API response time by 40% through Redis caching and query optimization',
-      'Led a team of 5 engineers shipping features end-to-end',
-      'Implemented CI/CD pipelines cutting deployment time from 2 hours to 8 minutes',
-      'Built real-time notification system handling 1M+ events/day using WebSockets',
-    ],
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],
-    color: 'from-blue-600/20 to-blue-900/10',
-  },
-  {
-    role: 'Full Stack Developer',
-    company: 'StartupXYZ',
+    role: 'Software Developer Engineer',
+    company: 'ND Softtech Solutions Pvt. Ltd.',
     location: 'Remote',
-    period: 'Jul 2022 – Dec 2023',
+    period: 'Jun 2025 – Feb 2026',
     type: 'Full-time',
     description: 'Built and shipped multiple product features for an early-stage fintech startup. Owned the entire frontend architecture.',
     achievements: [
